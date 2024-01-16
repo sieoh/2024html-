@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper{width: 800px; border: 1px solid red; overflow: auto;}
+    /*overflow: auto; float 속성을*/
+    p{width: 230px; margin: 5px; padding: 5px; border: 1px solid green; float: left;}
+    #cls{clear: both;} /*float 속성을 사용해서 컨텐츠가 이상하게 보일 때*/
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>전기자전거</h1>
+    <p>자전거는 바퀴가 두개이다 과거에는 사람의 힘으로 달렸지만 이제는 전기의 힘으로 이동할 수 있게 되었다</p>
+    <p>자전거는 바퀴가 두개이다 과거에는 사람의 힘으로 달렸지만 이제는 전기의 힘으로 이동할 수 있게 되었다</p>
+    <p>자전거는 바퀴가 두개이다</p>
+    <p id="cls">자전거는 바퀴가 두개이다 과거에는 사람의 힘으로 달렸지만 이제는 전기의 힘으로 이동할 수 있게 되었다</p>
+    <p>자전거는 바퀴가 두개이다 과거에는 사람의 힘으로 달렸지만</p>
+    <p>자전거는 바퀴가 두개이다 과거에는 사람의 힘으로 달렸지만</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>1부터 100까지 중에서 짝수만 합계 구하기</h2>\
+  <script>
+    let number=1;
+    var sum=0;
+    var sum1=0;
+    for(let i=0;i<=100;i++) {
+      if (i%2==1) {
+        continue;
+      }
+      sum+=i;
+    }
+    console.log(sum);
+    while(number<=100) {
+      if (number%2==0) {
+        number++;
+      }
+      sum1+=number;
+    }
+    console.log(sum1);
+  </script>
+</body>
+</html>

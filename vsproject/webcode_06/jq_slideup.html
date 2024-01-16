@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>버튼 클릭 이미지가 부드럽게 사라짐</h2>
+  <input type="button" value="슬라이드업" id="hideButton">
+  <input type="button" value="슬라이드다운" id="showButton">
+  <div>
+    <img src="img/2.jpg" alt="자동차" id="myImage">
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // hideButton 클릭 시 myImage를 slideUp 애니메이션으로 숨김
+      $("#hideButton").click(function() {
+        $("#myImage").slideUp(1000);
+      });
+      $("#showButton").click(function() {
+        $("#myImage").slideDown(1000);
+      });
+    });
+  </script>
+</body>
+</html>

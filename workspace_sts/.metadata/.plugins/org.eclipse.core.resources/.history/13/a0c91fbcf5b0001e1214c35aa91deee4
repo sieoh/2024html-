@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="utils.DBConfig" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="department-form">
+		<h2>부서 정보 등록</h2>
+		<form id="departmentform">
+			<label for="departid">부서번호:</label>
+			<input tpye="text" id="departid" name="departid" required>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="utils.DBConfig" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		// 2 접속
+		// Oracle 데이터베이스 연결 정보 설정
+		Connection connection = null;
+	    Statement statement = null;
+	    ResultSet resultSet = null;
+	    
+	    // 접속하기
+	    try {
+	    	DBConfig.getConnection();
+	    	out.println("jsp계정 접속성공");
+	    } catch (Exception e) {
+	    	out.println("jsp계정 접속실패");
+	    }
+		// SQL 쿼리 실행
+	    try {
+	       String sqlQuery = "SELECT count(*) as CNT FROM DEPARTMENTS";
+	       statement = connection.createStatement();
+	       resultSet = statement.executeQuery(sqlQuery);
+	       while(resultSet.next()){
+	       	String total = resultSet.getString("CNT");
+	       	out.println("<h2>총갯수:"+total+"</h2>");
+	       }
+	    }catch(SQLException e) {
+	    	out.println("실패");
+	    }
+	%>
+</body>
+</html>

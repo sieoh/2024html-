@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{width: 400px; height: 300px;}
+  </style>
+</head>
+<body>
+  <h2>간단한 샘픙3: 버튼클릭후 이미지 숨기기</h2>
+  <p><img src="sun.jpg" alt="일출" id="mtImage"></p>
+  <p><input type="button" value="이미지숨기기" onclick="hideImage()"></p>
+  <p><input type="button" value="이미지보이기" onclick="showImage()"></p>
+  <script>
+    //이미지 숨겼다가 보이기 함수
+    function hideImage(){
+      //이미지 엘리먼트 가져오기
+      var image=document.getElementById("mtImage");
+      //이미지 숨기기
+      if(image.style.display=="none"){
+        image.style.display="block";
+      } else {
+        image.style.display="none";
+      }
+    }
+    function showImage(){
+      var image=document.getElementById("mtImage");
+      image.style.display="block";
+    }
+  </script>
+</body>
+</html>

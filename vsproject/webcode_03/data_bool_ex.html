@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>논리 자료형 예제</h2>
+  <p>
+    대학교이수학점 score, 토익점수 toeic 라고 한다 <br>
+    score>=120 이상이고 toeic>=500 이면 '졸업 가능'<br>
+    score>=120 이상이고 toeic 500 미만이면 '수료 가능'<br>
+    score 120 미만이고 toeic 500 미만이면 '졸업 불가능'
+  </p>
+  <script>
+    var score = 120;
+    var toeic = 400;
+    if (score>=120&&toeic>=500){
+      console.log('당신은 졸업 가능합니다');
+    } else if (score>=120&&toeic<500) {
+      console.log('당신은 수료 가능합니다');
+    } else if (score<120&&toeic<500) {
+      console.log('당신은 졸업이 불가능합니다');
+    }
+  </script>
+</body>
+</html>

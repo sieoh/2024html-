@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border='1'>
+		<tr>
+			<% for(int i=2;i<10;i++) { %>
+			<td><%=i+"단" %></td> <%} %>
+		</tr>
+		<tr>
+			<%for(int j=1;j<10;j++) { %>
+			<%for(int i=2;i<10;i++) { %>
+			<td><%=i+"X"+j+"="+j*i %></td> <%} %>
+		</tr><%} %>
+	</table>
+	<%
+		out.println("<table border='1'>");
+		out.println("<tr>");	
+		for(int i=2;i<10;i++){
+			out.println("<td>"+i+"단</td>");
+		}
+	    out.println("</tr>");
+	    out.println("<tr>");
+		for(int j=1;j<10;j++){
+			for(int i=2;i<10;i++) {
+				out.println("<td>"+i+"X"+j+"="+j*i+"</td>");
+			}
+			out.println("<tr>");
+		}
+	%>
+</body>
+</html>

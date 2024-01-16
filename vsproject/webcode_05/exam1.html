@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="numberForm">
+    <p><label for="number1">첫 번째 숫자:</label>
+    <input type="number" id="number1" name="number1"></p>
+    <p><label for="number2">두 번째 숫자:</label>
+    <input type="number" id="number2" name="number2"></p>
+    <p><label for="number3">세 번째 숫자:</label>
+    <input type="number" id="number3" name="number3"></p>
+    <p><button type="button" id="calculateButton">계산하기</button></p>
+  </form>
+  <div id="result">
+    <p>합계: <span id="sum">0</span></p>
+    <p>평균: <span id="average">0</span></p>
+  </div>    
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#calculateButton').click(function(){
+        var num1=parseFloat($('#number1').val());
+        var num2=parseFloat($('#number2').val());
+        var num3=parseFloat($('#number3').val());
+        var sum=num1+num2+num3;
+        var average=sum/3;
+        $('#sum').text(sum);
+        $('#average').text(average.toFixed(2));
+      })
+    })
+  </script>
+</body>
+</html>

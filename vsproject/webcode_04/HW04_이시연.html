@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>회원가입 - validation 체크</h2>
+  <form>
+    <p><input type="text" name="" id="userId" placeholder="아이디"></p>
+    <p>
+      <input type="password" name="" id="password" placeholder="비밀번호">
+    </p>
+    <p>
+      <input type="password" name="" id="confirmPassword" placeholder="비밀번호 확인">
+    </p>
+    <p><input type="email" name="" id="email" placeholder="이메일"></p>
+    <p>
+      <input type="button" value="회원가입" 
+      onclick="return validateForm()">
+    </p>
+  </form>
+</body>
+  <script>
+    function validateForm() {
+      // 객체
+      var userId = document.getElementById("userId").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+      var email = document.getElementById("email").value;
+      if (userId.trim()!==""&&password.trim()!==""&&confirmPassword.trim()!==""&&email.trim()!=="") {
+        if (password!==confirmPassword) {
+          alert('비밀번호가 일치하지 않습니다');
+          $('#confirmPassword').val()=""
+          $('#confirmPassword').focus();
+        } else {
+          alert('회원가입 되었습니다');
+        }
+      } else {
+        alert('공백이 포함되어 있습니다. 다시 입력해주세요.');
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,16 @@
+package vo;
+
+public class BofreeVo {
+	int num;
+	String id;
+	String pw;
+	String name;
+	String hp;
+	String email;
+	String hompy;
+	String subject;
+	String content;
+	int hit;
+	String regdate;
+	
+}

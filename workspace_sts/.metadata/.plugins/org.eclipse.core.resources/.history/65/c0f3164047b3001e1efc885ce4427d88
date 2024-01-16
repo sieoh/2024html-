@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="utils.DBConfig" %>
+<%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>사용자 인증 처리</h2>
+	<%
+		String empid = request.getParameter("employeeId");
+		String userpw = request.getParameter("userPw");
+		
+		// DB 접속
+		//try {
+		//	DBConfig.getConnection();
+		//	System.out.println("접속 성공");
+		//} catch(SQLException se) {
+		//	System.out.println("접속 실패");
+		//}
+		
+	%>
+	
+	<% System.out.println("empid = "+ empid); %>
+	<br>
+	<% System.out.println("userpw = "+ userpw); %>
+</body>
+</html>

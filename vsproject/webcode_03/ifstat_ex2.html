@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>비행기 이미지 변경</h2>
+  <p>다음버튼을 누르면 1번->2번->3번->1번->2번</p>
+  <img src="plane1.jpg" alt="비행기" id="imageElement">
+  <br>
+  <input type="button" value="다음이미지" id="changeImageButton" onclick="changeImage()">
+  <script>
+    var num=0;
+    var imageElement=document.getElementById('imageElement');
+    function changeImage(){
+      if (num<3) {
+        num++;
+      } else {
+        num=1;
+      }
+      if(num===1){
+        imageElement.src='plane1.jpg'
+      } else if (num===2) {
+        imageElement.src='plane2.jpg'
+      } else if (num===3) {
+        imageElement.src='plane3.jpg'
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>두개의 숫자를 입력해서 합계를 출력</h2>
+  <p>첫번째 숫자: <input type="text" id="num1"></p>
+  <p>두번째 숫자: <input type="text" id="num2"></p>
+  <input type="button" value="합계계산" id="addsum">
+  <!-- 1. jquery lib 임포트-->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- 2. jq click 이벤트 사용-->
+  <script>
+    // 함수설명: ready - HTML이 모두 그려지면 동작
+    $(document).ready(function(){
+      // alert('ready 이벤트 확인');
+      // 버튼 아이디를 jq로 선택함 + Click() 이벤트함수 동작
+      $('#addsum').click(function(){
+        // 첫번째 숫자를 가져와서 출력
+        no1=parseInt($('#num1').val());
+        // console.log('첫번째숫자:',no1);
+        no2=parseInt($('#num2').val());
+        sum=no1+no2;
+        console.log('합계:',sum);
+      });
+    });
+  </script>
+</body>
+</html>

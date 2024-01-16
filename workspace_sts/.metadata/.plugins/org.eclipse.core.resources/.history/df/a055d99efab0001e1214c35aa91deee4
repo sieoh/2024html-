@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="utils.DBConfig" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		out.println("부서정보처리");
+		String departId=request.getParameter("departId");
+		String departName=request.getParameter("departName");
+		String location=request.getParameter("location");
+		String departnumber=request.getParameter("departnumber");
+	%>
+</body>
+</html>

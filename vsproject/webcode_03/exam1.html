@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1 단항 연산자
+    var num=5;
+    console.log(num*-1);
+    //2 이항 연산자
+    var a=8;
+    var b=3;
+    console.log('곱: ', a*b);
+    console.log('몫: ', Math.floor(a/b))
+    console.log('나머지: ', a%b)
+    //3 삼항 연산자
+    var raining = true;
+    var isRaining=(raining=true) ? "비가 옵니다":"비가 오지 않습니다";
+    console.log(isRaining);
+    // 종합 문제
+    var score = 65;
+    var pass=(score>=60)?"합격입니다":"불합격입니다";
+    console.log('합격여부는',pass);
+    if(score>=60){
+      console.log("합격입니다");
+    } else {
+      console.log("불합격입니다");
+    }
+  </script>
+</body>
+</html>

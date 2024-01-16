@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+D:\work\java_web_sol\workspace_sts\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2442740591.index
+19291902.index
+1553416227.index
+878384584.index
+84107399.index
+2293374590.index
+138834312.index
+1981902440.index

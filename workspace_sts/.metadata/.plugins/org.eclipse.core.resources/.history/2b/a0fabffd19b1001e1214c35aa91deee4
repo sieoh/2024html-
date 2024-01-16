@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    ul {display: inline-block; background-color: #333333; width: 800px;}
+    ul li {float: left; padding: 18px 20px; list-style: none; text-decoration-line: none; color: white; text-align: center;}
+    ul li a { text-decoration-line: none; color: white;}
+  </style>
+</head>
+<body>
+	<h2>기업 정보 시스템 예제</h2>
+	<ul>
+	 	<li><a href="empform.jsp">직원정보등록화면</a></li>
+	 	<li><a href="emplist.jsp">직원정보목록화면</a></li>
+	 	<li><a href="departform.jsp">부서정보등록화면</a></li>
+	 	<li><a href="departlist.jsp">부서정보목록화면</a></li>
+	 	
+	</ul>
+	<script src="js/jquery-3.7.1.min.js"></script>
+  	<script>
+	    $(document).ready(function(){
+	      $('li').hover(function(){
+	        $(this).css("background-color","#696969")
+	      },function(){
+	        $(this).css("background-color","#333333")
+	      });
+	    });
+  </script>
+</body>
+</html>
